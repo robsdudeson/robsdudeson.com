@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RobsdudesonCom</title>
+    <title>Robby Thompson - robsdudeson.com</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag "//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" %>
+    <%= stylesheet_link_tag "//cdn.rawgit.com/necolas/normalize.css/master/normalize.css" %>
+    <%= stylesheet_link_tag "//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render "layouts/navigation" %>
     <%= yield %>
+    <%= render "layouts/footer" %>
   </body>
 </html>
