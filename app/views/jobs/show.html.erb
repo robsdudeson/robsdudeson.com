@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'show', job: @job %>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <%= link_to 'Edit', edit_job_path(@job) %>
+    </div>
+    <div class="column">
+      <%= link_to 'Back', jobs_path %>
+    </div>
+  </div>
+</div>
+
+

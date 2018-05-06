@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <b><%= job.title %></b> - <%= job.start %> to <%= job.end == nil ? "Present" : job.end %> - <%= job.company %> - <%= job.city %>, <%= job.state %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <%= job.summary %>
+    </div>
+  </div>
+  <% unless job.highlights.nil? || job.highlights.empty? then %>
+    <div class="row">
+      <div class="column">
+        <b>Highlights</b>
+        <ul>
+          <%= job.highlights.each do |highlight| %>
+            <li><%= highlight %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>

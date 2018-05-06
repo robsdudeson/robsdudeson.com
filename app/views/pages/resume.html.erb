@@ -1,1 +1,90 @@
-resume
+<!--<div class="container" id="banner">
+  <div class="row">
+    <div class="column"><%= image_tag("earth_day.jpg") %></div>
+  </div>
+</div>-->
+
+<div class="container">
+  <div class="row">
+    <div class="column"><h1>Robby Thompson</h1></div>
+  </div>
+  <div class="row">
+    <div class="column column-20">github</div>
+    <div class="column column-20">linked-in</div>
+    <div class="column column-20">twitter</div>
+    <div class="column column-20">email</div>
+    <div class="column column-20">phone</div>
+  </div>
+  <div class="row">
+    <div class="column"><h2>Software Engineer</h2></div>
+  </div>
+  <div class="row">
+    <div class="column"><h3>Object-Oriented Analysis, Design and Development / Relatonal Database Systems</h3></div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <ul>
+        <li><b>Innovative sofware engineer</b> offering over six years of experience in the full software development life-cycle - From concept through delivery of next-generation application and custom solutions</li>
+        <li><b>Expert in advanced development methodologies</b>, tools, and processes contributing to the design and roll-out of cutting edge software applications.</li>
+        <li><b>Known for excellent troubleshooting skills</b> - able to analyze code and engineer well-researched, cost effective, and responsive solutions.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column"><h2>Technical Tools</h2></div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <div class="row">
+          <div class="column">JavaScript</div>
+          <div class="column">jQuery</div>
+          <div class="column">HTML</div>
+          <div class="column">CSS</div>
+          <div class="column"></div>
+        </div>
+        <div class="row">
+          <div class="column">Angular</div>
+          <div class="column">Bootstrap</div>
+          <div class="column">Milligram</div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        <div class="row">
+          <div class="column">Tomcat</div>
+          <div class="column">IBM WebSphere</div>
+          <div class="column">IBM Liberty Profile</div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        <div class="row">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+        <div class="row">
+          <div class="column"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column"><h2>Professional Experience</h2></div>
+  </div>
+  <%= @jobs.each do |job|%>
+    <div class="row">
+      <div class="column">
+        <%= render partial: 'jobs/show', locals: { job: job } %>
+      </div>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="column"><h2>Education</h2></div>
+  </div>
+  <div class="row">
+    <div class="column"><h2>Awards and Accomplishments</h2></div>
+  </div>
+</div>
+
