@@ -73,3 +73,24 @@ tools = Tool.create([{ name: 'JavaScript',
                        level: 'intermeidate'
                      }
                     ])
+contacts = Contact.create([{name:'github',
+                            url:'https://github.com/robsdudeson',
+                            icon:'fa fa-git-square'
+                           },
+                           {name:'linked-in',
+                            url:'https://linkedin.com/in/robbythompson',
+                            icon:'fa fa-linkedin'
+                           },
+                           {name:'twitter',
+                            url:'https://twitter.com/robsdudeson',
+                            icon:'fa fa-twitter'
+                           },
+                           {name:'email',
+                            url:'mailto:robsdudeson@gmail.com',
+                            icon:'fa fa-envelope'
+                           },
+                           {name:'cell - 740-601-5881',
+                            url:'tel:+17406015881',
+                            icon:'fa fa-mobile'
+                           }
+                          ])

@@ -4,22 +4,28 @@
   </div>
 </div>-->
 
+<style>
+  .center{
+    -webkit-align-content: center;
+    align-content: center;
+    text-align: center;
+  }
+</style>
+
 <div class="container">
   <div class="row">
-    <div class="column"><h1>Robby Thompson</h1></div>
+    <div class="column center"><h1>Robby Thompson</h1></div>
   </div>
   <div class="row">
-    <div class="column column-20">github</div>
-    <div class="column column-20">linked-in</div>
-    <div class="column column-20">twitter</div>
-    <div class="column column-20">email</div>
-    <div class="column column-20">phone</div>
+    <div class="column">
+      <%= render "contacts/contacts",  contacts: @contacts %>
+    </div>
   </div>
   <div class="row">
-    <div class="column"><h2>Software Engineer</h2></div>
+    <div class="column center"><h2>Software Engineer</h2></div>
   </div>
   <div class="row">
-    <div class="column"><h3>Object-Oriented Analysis, Design and Development / Relational Database Systems</h3></div>
+    <div class="column center"><h4><b>Object-Oriented Analysis, Design and Development / Relational Database Systems</b></h4></div>
   </div>
   <div class="row">
     <div class="column">
@@ -31,7 +37,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="column"><h2>Technical Tools</h2></div>
+    <div class="column center"><h2>Technical Tools</h2></div>
   </div>
   <div class="row">
     <div class="column">
@@ -39,7 +45,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="column"><h2>Professional Experience</h2></div>
+    <div class="column center"><h2>Professional Experience</h2></div>
   </div>
     <div class="row">
       <div class="column">
@@ -47,10 +53,10 @@
       </div>
     </div>
   <div class="row">
-    <div class="column"><h2>Education</h2></div>
+    <div class="column center"><h2>Education</h2></div>
   </div>
   <div class="row">
-    <div class="column"><h2>Awards and Accomplishments</h2></div>
+    <div class="column center"><h2>Awards and Accomplishments</h2></div>
   </div>
 </div>
 

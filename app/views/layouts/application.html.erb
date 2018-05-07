@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag "//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css" %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -17,6 +18,5 @@
       <div class="row"><%= yield %></div>
       <div class="row"><%= render "layouts/footer" %></div>
     </div>
-    <div id="scripts"><%= render "layouts/scripts" %></div>
   </body>
 </html>
