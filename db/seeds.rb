@@ -94,3 +94,16 @@ contacts = Contact.create([{name:'github',
                             icon:'fa fa-mobile'
                            }
                           ])
+edus = Education.create([{school:'The Ohio State University',
+                           city: 'Columbus',
+                           state: 'OH',
+                           start: Date.new(2009, 1, 1),
+                           end: Date.new(2011, 8, 1),
+                           gpa: 2.97,
+                           major: 'Computer Science and Engineering'
+                          }])
+awards = Award.create([{name:'Eagle Scout',
+                        received: Date.new(2004, 7, 1),
+                        organization: 'Boy Scouts of America',
+                        url: 'https://en.wikipedia.org/wiki/Eagle_Scout_(Boy_Scouts_of_America)'
+                       }])

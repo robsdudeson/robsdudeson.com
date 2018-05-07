@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <b><%= education.school %></b> - <%= education.start.strftime('%b-%Y') %> to <%= education.end == nil ? "Present" : education.end.strftime('%b-%Y') %> - <%= education.city %>, <%= education.state %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <%= education.major %>
+    </div>
+  </div>
+</div>

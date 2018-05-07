@@ -56,7 +56,13 @@
     <div class="column center"><h2>Education</h2></div>
   </div>
   <div class="row">
+    <div class="column"><%= render @educations || "we don't need no education"%></div>
+  </div>
+  <div class="row">
     <div class="column center"><h2>Awards and Accomplishments</h2></div>
+  </div>
+  <div class="row">
+    <div class="column"><%= render @awards || "no participation trophies here"%></div>
   </div>
 </div>
 
