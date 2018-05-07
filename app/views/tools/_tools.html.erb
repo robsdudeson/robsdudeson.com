@@ -1,0 +1,19 @@
+<div class="container">
+  <% if tools.nil? || tools.empty? then %>
+    <div class="row">
+      <div class="column">could not load tools</div>
+    </div>
+  <% else %>
+    <% row_len = 5 %>
+    <% rows = tools.size / row_len  %>
+    <% if tools.size % row_len != 0 then rows=rows+1 end %>
+
+    <% for i in 0..rows-1 do %>
+      <div class="row">
+      <% for j in 0..row_len-1 do %>
+        <div class="column"><%= tools[i*row_len + j].name %></div>
+      <% end %>
+      </div>
+  <% end %>
+  <% end %>
+</div>

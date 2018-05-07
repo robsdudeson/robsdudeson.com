@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="column">
-      <b><%= job.title %></b> - <%= job.start %> to <%= job.end == nil ? "Present" : job.end %> - <%= job.company %> - <%= job.city %>, <%= job.state %>
+      <b><%= job.title %></b> - <%= job.start.strftime('%b-%Y') %> to <%= job.end == nil ? "Present" : job.end.strftime('%b-%Y') %> - <%= job.company %> - <%= job.city %>, <%= job.state %>
     </div>
   </div>
   <div class="row">
@@ -14,7 +14,7 @@
       <div class="column">
         <b>Highlights</b>
         <ul>
-          <%= job.highlights.each do |highlight| %>
+          <%= for highlight in job.highlights do %>
             <li><%= highlight %></li>
           <% end %>
         </ul>

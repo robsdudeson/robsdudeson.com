@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   end
   def resume
     @jobs = Job.all
+    @tools = Tool.all
   end
 end

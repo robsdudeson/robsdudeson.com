@@ -29,6 +29,47 @@ jobs = Job.create([{ title: 'Specialist, Application Development',
                      highlights: ['Lead a team of seven senior level developers, consisting of contractors and full time employees.  These duties included onboarding, providing general SME of the app and infrastructure, and leading reviews of changes prior to deployment',
                                   'Successfully lead our line\'s build efforts for multiple large projects that interfaced with many teams and systems both internal and external to the company',
                                   'Successfully designed a fully automated pipeline to build, test, and deploy code artifacts when developers push changes to SCM.  This stack contained notifications and fail points to ensure only quality code reached the desired environment'
-                     ]
+                                 ]
                    }
                   ])
+tools = Tool.create([{ name: 'JavaScript',
+                       use: 'language',
+                       level: 'expert'
+                     },
+                     { name: 'jQuery',
+                       use: 'language',
+                       level: 'noob'
+                     },
+                     { name: 'HTML',
+                       use: 'language',
+                       level: 'intermeidate'
+                     },
+                     { name: 'CSS',
+                       use: 'language',
+                       level: 'intermeidate'
+                     },
+                     { name: 'Angular',
+                       use: 'framework',
+                       level: 'intermeidate'
+                     },
+                     { name: 'Bootstrap',
+                       use: 'framework',
+                       level: 'intermeidate'
+                     },
+                     { name: 'Milligram',
+                       use: 'framework',
+                       level: 'intermeidate'
+                     },
+                     { name: 'Tomcat',
+                       use: 'server',
+                       level: 'intermeidate'
+                     },
+                     { name: 'IBM WebSphere',
+                       use: 'server',
+                       level: 'intermeidate'
+                     },
+                     { name: 'IBM Liberty Profile',
+                       use: 'server',
+                       level: 'intermeidate'
+                     }
+                    ])
