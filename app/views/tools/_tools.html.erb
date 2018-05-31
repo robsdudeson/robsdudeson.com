@@ -11,7 +11,10 @@
     <% for i in 0..rows-1 do %>
       <div class="row">
       <% for j in 0..row_len-1 do %>
-        <div class="column"><%= tools[i*row_len + j].name %></div>
+        <% index = i*row_len + j %>
+        <% if index < tools.size then%>
+        <div class="column"><%= tools[index].name %></div>
+        <% end %>
       <% end %>
       </div>
   <% end %>
