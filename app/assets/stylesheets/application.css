@@ -14,3 +14,38 @@
  *= require_self
  *= require font-awesome
  */
+
+@media print {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contact.container{
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .tool.container{
+        display: inline-flex;
+        margin: 0 auto;
+        max-width: 112.0rem;
+        padding: 0 2.0rem;
+        position: relative;
+        width: 100%;
+    }
+    .tool.row{
+        padding: .5em;
+    }
+    .tool.column{
+        padding: .5em;
+    }
+
+    .exp.container{
+        padding: 0.5em;
+    }
+
+    .award.container{
+        text-align: left;
+    }
+}

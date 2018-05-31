@@ -1,4 +1,4 @@
-<div class="container">
+<div class="tool container" >
   <% if tools.nil? || tools.empty? then %>
     <div class="row">
       <div class="column">could not load tools</div>
@@ -9,11 +9,11 @@
     <% if tools.size % row_len != 0 then rows=rows+1 end %>
 
     <% for i in 0..rows-1 do %>
-      <div class="row">
+      <div class="tool row">
       <% for j in 0..row_len-1 do %>
         <% index = i*row_len + j %>
         <% if index < tools.size then%>
-        <div class="column"><%= tools[index].name %></div>
+        <div class="tool column"><%= tools[index].name %></div>
         <% end %>
       <% end %>
       </div>

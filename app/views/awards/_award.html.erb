@@ -1,4 +1,4 @@
-<div class="container">
+<div class="award container">
   <div class="row">
     <div class="column">
       <b><%= award.name %></b> - <%= award.organization %> - <%= award.received.strftime('%b-%Y') %><% unless award.url.nil? || award.url.blank? %> - <a href="<%= award.url %>">more information</a><% end %>

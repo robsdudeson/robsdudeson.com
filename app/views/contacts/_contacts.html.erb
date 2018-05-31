@@ -1,4 +1,4 @@
-<div class="container">
+<div class="contact container">
   <div class="row">
     <% contacts.each do |contact| %>
       <div class="column"><h5><a href="<%= contact.url.nil? || contact.url.empty? ? "#" : contact.url %>"><i class="<%= contact.icon %>"></i> <%= contact.name %></a></h5></div>
