@@ -110,8 +110,7 @@ contacts = Contact.create([{name:'github',
                             icon:'fa fa-twitter'
                            },
                            {name:'robsdudeson@gmail.com',
-                            url:'mailto:robsdudeson@gmail.com',
-                            icon:'fa fa-envelope'
+                            url:'mailto:robsdudeson@gmail.com'
                            },
                            {name:'740-601-5881',
                             url:'tel:+17406015881',
