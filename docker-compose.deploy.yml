@@ -7,6 +7,7 @@ services:
       - "80:80"
     depends_on:
       - app
+      - app1
 
   app:
     image: robsdudeson/robsdudeson.com:latest
@@ -16,6 +17,19 @@ services:
       - .:/app
     expose:
       - "3000"
+    links:
+      - "db:dbhost"
+    depends_on:
+      - db
+
+  app1:
+    image: robsdudeson/rah-prototype:latest
+    restart: always
+    command: sh -c "wait-for-it db:5432 -- bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/app
+    expose:
+      - "3001"
     links:
       - "db:dbhost"
     depends_on:
