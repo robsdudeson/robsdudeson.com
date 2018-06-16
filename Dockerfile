@@ -10,5 +10,6 @@ ADD Gemfile.lock /app/Gemfile.lock
 RUN gem install bundler
 RUN bundle install
 COPY . /app
+RUN chmod 777 /app/docker-entry.sh
 
 EXPOSE 3000
