@@ -7,6 +7,8 @@ require 'date'
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Job.delete_all
 jobs = Job.create([{ title: 'Specialist, Application Development',
                      company: 'Nationwide Insurance Mutual Co.',
                      city: 'Columbus',
@@ -60,6 +62,8 @@ jobs = Job.create([{ title: 'Specialist, Application Development',
                      ]
                    }
                   ])
+
+Tool.delete_all
 tools = Tool.create([{ name: 'JavaScript', use: 'language', level: 'expert' },
                      { name: 'jQuery', use: 'language', level: 'noob' },
                      { name: 'HTML', use: 'language', level: 'intermeidate' },
@@ -97,6 +101,8 @@ tools = Tool.create([{ name: 'JavaScript', use: 'language', level: 'expert' },
                      { name: '', use: 'server', level: 'intermeidate' }
 
                     ])
+
+Contact.delete_all
 contacts = Contact.create([{name:'github',
                             url:'https://github.com/robsdudeson',
                             icon:'fa fa-git-square'
@@ -117,6 +123,7 @@ contacts = Contact.create([{name:'github',
                             icon:'fa fa-mobile'
                            }
                           ])
+Education.delete_all
 edus = Education.create([{school:'The Ohio State University',
                            city: 'Columbus',
                            state: 'OH',
@@ -125,6 +132,7 @@ edus = Education.create([{school:'The Ohio State University',
                            gpa: 2.97,
                            major: 'Computer Science and Engineering'
                           }])
+Award.delete_all
 awards = Award.create([{name:'Eagle Scout',
                         received: Date.new(2004, 7, 1),
                         organization: 'Boy Scouts of America',
